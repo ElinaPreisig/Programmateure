@@ -1,7 +1,7 @@
 <?php
 include 'config.php'; 
 
-// Hier erfolgt der API-Aufruf und die Datenextraktion -- DYNAMISCHER LINK MÖGLICH???
+// Hier erfolgt der API-Aufruf und die Datenextraktion
 $apiData = file_get_contents("https://il.srgssr.ch/integrationlayer/2.0/srf/songList/radio/byChannel/69e8ac16-4327-4af4-b873-fd5cd6e895a7");
 
 // Die Daten werden in ein Array konvertiert
@@ -13,6 +13,14 @@ function formatDate($date) {
     return $dateTime->format('Y-m-d H:i:s');
 }
 
+// Funktion zur Formatierung des Titels und des Künstlers
+function formatTitleArtist($str) {
+    // Zuerst alle Buchstaben in Kleinbuchstaben umwandeln
+    $str = strtolower($str);
+    // Dann den ersten Buchstaben jedes Wortes in Großbuchstaben umwandeln
+    return ucwords($str);
+}
+
 // Initialisiert ein Array, um die transformierten Daten zu speichern
 $transformedData = [];
 
@@ -20,11 +28,11 @@ $transformedData = [];
 if (isset($data['songList']) && is_array($data['songList'])) {
     // Iteriert durch die songList
     foreach ($data['songList'] as $song) {
-        // Überprüft, ob 'title' im Array vorhanden ist, bevor darauf zugegriffen wird
-        $title = isset($song['title']) ? $song['title'] : "Unbekannter Titel";
+        /// Überprüft, ob 'title' im Array vorhanden ist, bevor darauf zugegriffen wird
+        $title = isset($song['title']) ? formatTitleArtist($song['title']) : "Unbekannter Titel";
 
         // Überprüft, ob 'artist' und 'name' im Array vorhanden sind, bevor darauf zugegriffen wird
-        $artist = isset($song['artist']['name']) ? $song['artist']['name'] : "Unbekannter Künstler";
+        $artist = isset($song['artist']['name']) ? formatTitleArtist($song['artist']['name']) : "Unbekannter Künstler";
 
         // Überprüft, ob 'isPlayingNow' im Array vorhanden ist, bevor darauf zugegriffen wird
         $isPlayingNow = isset($song['isPlayingNow']) ? ($song['isPlayingNow'] ? 1 : 0) : 0;
