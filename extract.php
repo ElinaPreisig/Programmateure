@@ -2,11 +2,8 @@
 include 'config.php'; // Lade die Konfigurationsdatei
 
 function fetchSongData() {
-    // Aktuelles Datum generieren
-    $currentDate = date('Y-m-d');
-
-    // Dynamischer Link mit dem aktuellen Datum
-    $url = "https://il.srgssr.ch/integrationlayer/2.0/srf/songList/radio/byChannel/69e8ac16-4327-4af4-b873-fd5cd6e895a7?from={$currentDate}T00%3A00%3A00%2B02%3A00&to={$currentDate}T23%3A59%3A00%2B02%3A00&pageSize=500";
+    // Link mit dem aktuellen Datum
+    $url = "https://il.srgssr.ch/integrationlayer/2.0/srf/songList/radio/byChannel/69e8ac16-4327-4af4-b873-fd5cd6e895a7";
 
     // Initialisiert eine cURL-Sitzung
     $ch = curl_init($url);
