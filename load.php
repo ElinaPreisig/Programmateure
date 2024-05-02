@@ -1,9 +1,7 @@
 <?php
-// Bindet die Datenbankkonfiguration ein
-include 'config.php'; 
 
 // Transformations-Skript  als 'transform.php' einbinden
-$jsonData = include('transform.php');
+include 'transform.php';
 
 // Dekodiert die JSON-Daten zu einem Array
 $dataArray = json_decode($jsonData, true);
