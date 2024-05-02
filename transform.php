@@ -1,11 +1,5 @@
 <?php
-include 'config.php'; 
-
-// Hier erfolgt der API-Aufruf und die Datenextraktion
-$apiData = file_get_contents("https://il.srgssr.ch/integrationlayer/2.0/srf/songList/radio/byChannel/69e8ac16-4327-4af4-b873-fd5cd6e895a7");
-
-// Die Daten werden in ein Array konvertiert
-$data = json_decode($apiData, true);
+include 'extract.php'; 
 
 // Funktion zur Umwandlung des Datums in das SQL-Datumsformat
 function formatDate($date) {
@@ -53,6 +47,3 @@ if (isset($data['songList']) && is_array($data['songList'])) {
 
 // Kodiert die transformierten Daten in JSON
 $jsonData = json_encode($transformedData, JSON_PRETTY_PRINT);
-
-// Gibt die JSON-Daten zurück, anstatt sie auszugeben
-return $jsonData;
