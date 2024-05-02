@@ -32,15 +32,10 @@ function fetchSongData() {
 
     // Gibt die Daten zurück
     return $data;
-
-    // Dekodiert die JSON-Antwort und gibt Daten zurück - Lösung Nick; Nötig hier?
-    // return json_decode($response, true);
 }
 
-// Gibt die Daten zurück, wenn dieses Skript eingebunden ist - Lösung Nick; Nötig hier?
-// return fetchSongData();
-
 // Gibt die Daten aus
-echo json_encode(fetchSongData());
+$data = fetchSongData();
+// echo $data;
 
 ?>
