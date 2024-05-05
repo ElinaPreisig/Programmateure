@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1562.3 4583.86">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .14;
+        stroke: url(#Unbenannter_Verlauf);
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-width: 462px;
+      }
+
+      .cls-2 {
+        stroke: url(#Unbenannter_Verlauf-2);
+        stroke-dasharray: 0 0 100 100;
+        stroke-linejoin: round;
+      }
+    </style>
+    <linearGradient id="Unbenannter_Verlauf" data-name="Unbenannter Verlauf" x1="781.15" y1="4555" x2="781.15" y2="463" gradientTransform="translate(0 4786) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b045e"/>
+      <stop offset="1" stop-color="#a64242"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf-2" data-name="Unbenannter Verlauf" x1="800.86" y1="4550.55" x2="800.86" y2="434.5" xlink:href="#Unbenannter_Verlauf"/>
+  </defs>
+  <g id="Ebene_1-2" data-name="Ebene 1">
+    <g>
+      <path class="cls-1" d="M871,231c656.5,348.5,279,825,0,964.5s-779,459.5-517.5,1017.5,691.5,110.5,941.5,790.5-866.33,1236.17-1064,1319.5"/>
+      <path class="cls-2" d="M829.23,193l44.4,41.09c656.5,348.5,279,825,0,964.5s-779,459.5-517.5,1017.5c261.5,558,691.5,110.5,941.5,790.5,250,680-970.73,1281.08-1168.4,1364.41"/>
+    </g>
+  </g>
+</svg>
