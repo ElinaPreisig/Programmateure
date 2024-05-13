@@ -29,17 +29,21 @@ body {
     width: 7fr;
 }
 */
+a {
+    text-decoration: none;
+}
+
 h2 {
     font-size: 64px;
     font-weight: 700; /* Bold */
 }
 
-.song-of-the-day h2, .song-of-the-week h2, .song-of-the-month h2{
+.song-of-the-week h2, .song-of-the-month h2, .song-of-the-year h2{
     text-align: center; /* Center the text */
 }
 
 
-.numbers-sotd h2, .numbers-sotw h2, .numbers-sotm h2{
+.numbers-sotw h2, .numbers-sotm h2, .numbers-soty h2{
     margin: 0; /* Entfernen Sie den Standardmargenwert für die h2-Elemente */
     text-align: center; /* Center the text */
 }
@@ -72,7 +76,7 @@ h5 {
     font-weight: 700; /* Bold */
 }
 
-.song-of-the-day-container h5, .song-of-the-week-container h5, .song-of-the-month-container h5{
+.song-of-the-week-container h5, .song-of-the-month-container h5, .song-of-the-year-container h5{
     margin: 0; /* Entfernen Sie den Standardmargenwert für die h5-Elemente */
 }
 
@@ -80,6 +84,11 @@ h5 {
 p {
     font-size: 19px;
     font-weight: 400; /* Regular */
+}
+
+/*Boxen songs*/
+.song-of-the-week-1 {
+background-color: rgba(226, 226, 226, 0.4);
 }
 
 /* GRID BODY */
@@ -174,9 +183,9 @@ main {
     grid-column: 3; /* Platzieren Sie die Box in der ersten Spalte */
 }
 
-/*SONG OF THE DAY*/
+/*SONG OF THE WEEK*/
 
-.song-of-the-day {
+.song-of-the-week {
     grid-row: 3; /* Platzieren Sie die Einführungssektion in der dritten Zeile */
     grid-column: 2 / span 6; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
     display: grid;
@@ -185,111 +194,19 @@ main {
     grid-template-rows: auto; /* Automatische Höhe für die Zeilen */
 }
 
-.song-of-the-day-title {
-    grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
-    grid-column: 1 / span 5; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
-}
-
-.song-of-the-day-container {
-    grid-row: 2; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
-    grid-column: 1 / span 2; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
-}
-
-.podest-sotd {
-    grid-row: 3; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
-    grid-column: 1 / span 5; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
-    display: grid;
-    grid-gap: 3%; /* Abstand zwischen den Elementen */
-    grid-template-columns: repeat(5, 1fr); /* 7 gleichbreite Spalten */
-    grid-template-rows: 1; /* Automatische Höhe für die Zeilen */
-}
-
-.podest-sotd-base {
-    width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
-    height: 2px;
-    background-color: var(--off-white);
-    box-sizing: border-box;
-    grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
-    grid-column: 1 / span 5; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
-    align-self: end;
-}
-
-.podest-sotd-2 {
-    width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
-    height: 60px;
-    background-color: var(--off-white);
-    box-sizing: border-box;
-    grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
-    grid-column: 2 / span 1; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
-    align-self: end;
-}
-
-.podest-sotd-1 {
-    width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
-    height: 100px;
-    background-color: var(--off-white);
-    box-sizing: border-box;
-    grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
-    grid-column: 3 / span 1; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
-    align-self: end;
-}
-
-.podest-sotd-3 {
-    width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
-    height: 30px;
-    background-color: var(--off-white);
-    box-sizing: border-box;
-    grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
-    grid-column: 4 / span 1; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
-    align-self: end;
-}
-
-.numbers-sotd {
-    grid-row: 4; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
-    grid-column: 2 / span 3; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
-   display: grid;
-    grid-gap: 3%; /* Abstand zwischen den Elementen */
-    grid-template-columns: repeat(3, 1fr); /* 7 gleichbreite Spalten */
-    grid-template-rows: auto; /* Automatische Höhe für die Zeilen */
-}
-
-/*RIGHT SIDE 1*/
-
-.right {
-    grid-row: 2; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
-    grid-column: 5 / span 2; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
-    align-self: first baseline;
-}
-
-.explanation-right-1 {
-    text-align: right; /* Setze den Text rechtsbündig aus */
-}
-
-/*SONG OF THE WEEK*/
-
-.song-of-the-week {
-    grid-row: 5; /* Platzieren Sie die Einführungssektion in der dritten Zeile */
-    grid-column: 1 / span 6; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
-    display: grid;
-    grid-gap: 3%; /* Abstand zwischen den Elementen */
-    grid-template-columns: repeat(6, 1fr); /* 7 gleichbreite Spalten */
-    grid-template-rows: auto; /* Automatische Höhe für die Zeilen */
-}
-
 .song-of-the-week-title {
     grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
-    grid-column: 2 / span 5; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+    grid-column: 1 / span 5; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
 }
 
 .song-of-the-week-container {
     grid-row: 2; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
-    grid-column: 5 / span 2; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
-    text-align: right; /* Setze den Text rechtsbündig aus */
+    grid-column: 1 / span 1; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
 }
 
 .podest-sotw {
     grid-row: 3; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
-    grid-column: 2 / span 5; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+    grid-column: 1 / span 5; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
     display: grid;
     grid-gap: 3%; /* Abstand zwischen den Elementen */
     grid-template-columns: repeat(5, 1fr); /* 7 gleichbreite Spalten */
@@ -338,30 +255,30 @@ main {
 
 .numbers-sotw {
     grid-row: 4; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
-    grid-column: 3 / span 3; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+    grid-column: 2 / span 3; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
    display: grid;
     grid-gap: 3%; /* Abstand zwischen den Elementen */
     grid-template-columns: repeat(3, 1fr); /* 7 gleichbreite Spalten */
     grid-template-rows: auto; /* Automatische Höhe für die Zeilen */
 }
 
-/*LEFT SIDE 1*/
+/*RIGHT SIDE 1*/
 
-.left {
+.right {
     grid-row: 2; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
-    grid-column: 1 / span 2; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+    grid-column: 5 / span 2; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+    align-self: first baseline;
 }
 
-.explanation-left-1 {
-    text-align: left; /* Setze den Text linksbündig aus */
+.explanation-right-1 {
+    text-align: right; /* Setze den Text rechtsbündig aus */
 }
 
-
-/*SONG OF THE WEEK*/
+/*SONG OF THE MONTH*/
 
 .song-of-the-month {
-    grid-row: 7; /* Platzieren Sie die Einführungssektion in der dritten Zeile */
-    grid-column: 2 / span 6; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+    grid-row: 5; /* Platzieren Sie die Einführungssektion in der dritten Zeile */
+    grid-column: 1 / span 6; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
     display: grid;
     grid-gap: 3%; /* Abstand zwischen den Elementen */
     grid-template-columns: repeat(6, 1fr); /* 7 gleichbreite Spalten */
@@ -370,17 +287,18 @@ main {
 
 .song-of-the-month-title {
     grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
-    grid-column: 1 / span 5; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+    grid-column: 2 / span 5; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
 }
 
 .song-of-the-month-container {
     grid-row: 2; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
-    grid-column: 1 / span 2; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+    grid-column: 5 / span 1; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+    text-align: right; /* Setze den Text rechtsbündig aus */
 }
 
 .podest-sotm {
     grid-row: 3; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
-    grid-column: 1 / span 5; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+    grid-column: 2 / span 5; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
     display: grid;
     grid-gap: 3%; /* Abstand zwischen den Elementen */
     grid-template-columns: repeat(5, 1fr); /* 7 gleichbreite Spalten */
@@ -428,6 +346,97 @@ main {
 }
 
 .numbers-sotm {
+    grid-row: 4; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
+    grid-column: 3 / span 3; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+   display: grid;
+    grid-gap: 3%; /* Abstand zwischen den Elementen */
+    grid-template-columns: repeat(3, 1fr); /* 7 gleichbreite Spalten */
+    grid-template-rows: auto; /* Automatische Höhe für die Zeilen */
+}
+
+/*LEFT SIDE 1*/
+
+.left {
+    grid-row: 2; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
+    grid-column: 1 / span 2; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+}
+
+.explanation-left-1 {
+    text-align: left; /* Setze den Text linksbündig aus */
+}
+
+
+/*SONG OF THE YEAR*/
+
+.song-of-the-year {
+    grid-row: 7; /* Platzieren Sie die Einführungssektion in der dritten Zeile */
+    grid-column: 2 / span 6; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+    display: grid;
+    grid-gap: 3%; /* Abstand zwischen den Elementen */
+    grid-template-columns: repeat(6, 1fr); /* 7 gleichbreite Spalten */
+    grid-template-rows: auto; /* Automatische Höhe für die Zeilen */
+}
+
+.song-of-the-year-title {
+    grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
+    grid-column: 1 / span 5; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+}
+
+.song-of-the-year-container {
+    grid-row: 2; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
+    grid-column: 1 / span 1; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+}
+
+.podest-soty {
+    grid-row: 3; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
+    grid-column: 1 / span 5; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+    display: grid;
+    grid-gap: 3%; /* Abstand zwischen den Elementen */
+    grid-template-columns: repeat(5, 1fr); /* 7 gleichbreite Spalten */
+    grid-template-rows: 1; /* Automatische Höhe für die Zeilen */
+}
+
+.podest-soty-base {
+    width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
+    height: 2px;
+    background-color: var(--off-white);
+    box-sizing: border-box;
+    grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
+    grid-column: 1 / span 5; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+    align-self: end;
+}
+
+.podest-soty-2 {
+    width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
+    height: 60px;
+    background-color: var(--off-white);
+    box-sizing: border-box;
+    grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
+    grid-column: 2 / span 1; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+    align-self: end;
+}
+
+.podest-soty-1 {
+    width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
+    height: 100px;
+    background-color: var(--off-white);
+    box-sizing: border-box;
+    grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
+    grid-column: 3 / span 1; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+    align-self: end;
+}
+
+.podest-soty-3 {
+    width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
+    height: 30px;
+    background-color: var(--off-white);
+    box-sizing: border-box;
+    grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
+    grid-column: 4 / span 1; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+    align-self: end;
+}
+
+.numbers-soty {
     grid-row: 4; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
     grid-column: 2 / span 3; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
    display: grid;
