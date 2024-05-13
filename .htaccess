@@ -1,0 +1,5 @@
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "https://570618-4.web.fhgr.ch"
+    Header set Access-Control-Allow-Headers "Content-Type"
+    Header set Access-Control-Allow-Methods "GET"
+</IfModule>
