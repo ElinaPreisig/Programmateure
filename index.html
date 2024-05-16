@@ -46,25 +46,25 @@
         </div>
 
         <div class="song-of-the-week-container">
-            <div class="song-of-the-week-1">
+            <div class="song-of-the-week-1" draggable="true" id="song-of-the-week-1">
                  <h5>song 1</h5>
                  <p>artist 1</p>
             </div>
-            <div class="song-of-the-week-2">
+            <div class="song-of-the-week-2" draggable="true" id="song-of-the-week-2">
                  <h5>song 2</h5>
                 <p>artist 2</p>
              </div>
-             <div class="song-of-the-week-3">
+             <div class="song-of-the-week-3" draggable="true" id="song-of-the-week-3">
                 <h5>song 3</h5>
                 <p>artist 3</p>
             </div>
         </div>
 
-        <div class="podest-sotw">
+        <div class="podest-sotw" id="drop-zone">
             <div class="podest-sotw-base"></div>
-            <div class="podest-sotw-2"></div>
-            <div class="podest-sotw-1"></div>
-            <div class="podest-sotw-3"></div>
+            <div class="podest-sotw-2" id="sotw-drop-1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="podest-sotw-1" id="sotw-drop-0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="podest-sotw-3" id="sotw-drop-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </div>
 
         <div class="numbers-sotw">
@@ -86,30 +86,30 @@
 
     <section id="song-of-the-month" class="song-of-the-month">
 
-        <div class="song-of-the-month-title">
+        <div class="song-of-the-month-title" >
             <h2>Song of the month</h2>
         </div>
 
         <div class="song-of-the-month-container">
-            <div class="song-of-the-month-1">
+            <div class="song-of-the-month-1" draggable="true" id="song-of-the-month-1">
                  <h5>song 1</h5>
                  <p>artist 1</p>
             </div>
-            <div class="song-of-the-month-2">
+            <div class="song-of-the-month-2" draggable="true" id="song-of-the-month-2">
                  <h5>song 2</h5>
                 <p>artist 2</p>
              </div>
-             <div class="song-of-the-month-3">
+             <div class="song-of-the-month-3" draggable="true" id="song-of-the-month-3">
                 <h5>song 3</h5>
                 <p>artist 3</p>
             </div>
         </div>
 
         <div class="podest-sotm">
-            <div class="podest-sotm-base"></div>
-            <div class="podest-sotm-2"></div>
-            <div class="podest-sotm-1"></div>
-            <div class="podest-sotm-3"></div>
+            <div class="podest-sotm-base" id="drop-zone"></div>
+            <div class="podest-sotm-2" id="sotm-drop-1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="podest-sotm-1" id="sotm-drop-0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="podest-sotm-3" id="sotm-drop-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </div>
 
         <div class="numbers-sotm">
@@ -135,16 +135,16 @@
             <h2>Song of the year</h2>
         </div>
 
-        <div class="song-of-the-year-container">
-            <div class="song-of-the-year-1">
+        <div class="song-of-the-year-container" id="drop-zone">
+            <div class="song-of-the-year-1" draggable="true" id="song-of-the-year-1">
                  <h5>song 1</h5>
                  <p>artist 1</p>
             </div>
-            <div class="song-of-the-year-2">
+            <div class="song-of-the-year-2" draggable="true" id="song-of-the-year-2">
                  <h5>song 2</h5>
                 <p>artist 2</p>
              </div>
-             <div class="song-of-the-year-3">
+             <div class="song-of-the-year-3" draggable="true" id="song-of-the-year-3">
                 <h5>song 3</h5>
                 <p>artist 3</p>
             </div>
@@ -152,9 +152,9 @@
 
         <div class="podest-soty">
             <div class="podest-soty-base"></div>
-            <div class="podest-soty-2"></div>
-            <div class="podest-soty-1"></div>
-            <div class="podest-soty-3"></div>
+            <div class="podest-soty-2" id="soty-drop-1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="podest-soty-1" id="soty-drop-0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="podest-soty-3" id="soty-drop-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </div>
 
         <div class="numbers-soty">
