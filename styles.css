@@ -341,7 +341,7 @@ main {
 
 .podest-sotm-2 {
     width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
-    height: 60px;
+    height: 220px;
     background-color: var(--off-white);
     box-sizing: border-box;
     grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
@@ -351,7 +351,7 @@ main {
 
 .podest-sotm-1 {
     width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
-    height: 100px;
+    height: 250px;
     background-color: var(--off-white);
     box-sizing: border-box;
     grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
@@ -361,7 +361,7 @@ main {
 
 .podest-sotm-3 {
     width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
-    height: 30px;
+    height: 200px;
     background-color: var(--off-white);
     box-sizing: border-box;
     grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
@@ -432,7 +432,7 @@ main {
 
 .podest-soty-2 {
     width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
-    height: 60px;
+    height: 220px;
     background-color: var(--off-white);
     box-sizing: border-box;
     grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
@@ -442,7 +442,7 @@ main {
 
 .podest-soty-1 {
     width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
-    height: 100px;
+    height: 250px;
     background-color: var(--off-white);
     box-sizing: border-box;
     grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
@@ -452,7 +452,7 @@ main {
 
 .podest-soty-3 {
     width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
-    height: 30px;
+    height: 200px;
     background-color: var(--off-white);
     box-sizing: border-box;
     grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
