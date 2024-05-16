@@ -3,7 +3,7 @@
 :root {
     --off-black: #011114; /* Set the primary color */
     --off-white: #E2E2E2; /* Set the secondary color */
-    --tertiary-color: #011114; /* Set the tertiary color */
+    --tertiary-color: #361556; /* Set the tertiary color */
 }
 
 /* ALLGEMEINE STYLES */
@@ -80,16 +80,40 @@ h5 {
     margin: 0; /* Entfernen Sie den Standardmargenwert für die h5-Elemente */
 }
 
+.song-of-the-week-1 h5, .song-of-the-week-2 h5, .song-of-the-week-3 h5, .song-of-the-month-1 h5, .song-of-the-month-2 h5, .song-of-the-month-3 h5, .song-of-the-year-1 h5, .song-of-the-year-2 h5, .song-of-the-year-3 h5 {
+    color: var(--tertiary-color); /* Change the color */
+}
 
 p {
     font-size: 19px;
     font-weight: 400; /* Regular */
 }
 
-/*Boxen songs*/
-.song-of-the-week-1 {
-background-color: rgba(226, 226, 226, 0.4);
+.song-of-the-week-1 p, .song-of-the-week-2 p, .song-of-the-week-3 p, .song-of-the-month-1 p, .song-of-the-month-2 p, .song-of-the-month-3 p, .song-of-the-year-1 p, .song-of-the-year-2 p, .song-of-the-year-3 p {
+    color: var(--tertiary-color);
 }
+
+
+/* DRAG & DROP */
+
+.song-of-the-week-1, .song-of-the-week-2, .song-of-the-week-3, .song-of-the-month-1, .song-of-the-month-2, .song-of-the-month-3, .song-of-the-year-1, .song-of-the-year-2, .song-of-the-year-3{   
+    cursor: pointer;
+    background-color: var(--off-white);
+    opacity: 0.8;
+}
+
+/* .song-of-the-week-2 {   
+    cursor: pointer;
+    background-color: var(--off-white);
+    opacity: 0.8;
+}
+
+.song-of-the-week-3 {   
+    cursor: pointer;
+    background-color: var(--off-white);
+    opacity: 0.8;
+} */
+
 
 /* GRID BODY */
 
@@ -225,7 +249,7 @@ main {
 
 .podest-sotw-2 {
     width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
-    height: 60px;
+    height: 220px;
     background-color: var(--off-white);
     box-sizing: border-box;
     grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
@@ -235,7 +259,7 @@ main {
 
 .podest-sotw-1 {
     width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
-    height: 100px;
+    height: 250px;
     background-color: var(--off-white);
     box-sizing: border-box;
     grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
@@ -245,7 +269,7 @@ main {
 
 .podest-sotw-3 {
     width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
-    height: 30px;
+    height: 200px;
     background-color: var(--off-white);
     box-sizing: border-box;
     grid-row: 1; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
@@ -292,7 +316,7 @@ main {
 
 .song-of-the-month-container {
     grid-row: 2; /* Platzieren Sie die Einführungssektion in der zweiten Zeile */
-    grid-column: 5 / span 1; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
+    grid-column: 6 / span 1; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
     text-align: right; /* Setze den Text rechtsbündig aus */
 }
 
@@ -455,3 +479,6 @@ main {
 .explanation-right-1 {
     text-align: right; /* Setze den Text rechtsbündig aus */
 }
+
+
+
