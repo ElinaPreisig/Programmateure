@@ -17,8 +17,7 @@
 
     <main class="grid-main">
         <section id="introduction" class="introduction">
-            <h5>Hast du auch das Gefühl, ständig den gleichen Song 
-            im Radio zu hören?</h5>
+            <h5>Hast du auch das Gefühl, ständig den gleichen Song im Radio zu hören?</h5>
             <p>Finde hier heraus, welche Songs tatsächlich auf dem Podest der meistgespieltesten Songs des SRF 1 sind.</p>
         </section>
 
@@ -45,22 +44,37 @@
             <h2>Song of the week</h2>
         </div>
 
-        <div class="song-of-the-week-container">
-            <div class="song-of-the-week-1" draggable="true" id="song-of-the-week-1">
-                 <h5>song 1</h5>
-                 <p>artist 1</p>
-            </div>
-            <div class="song-of-the-week-2" draggable="true" id="song-of-the-week-2">
-                 <h5>song 2</h5>
-                <p>artist 2</p>
-             </div>
-             <div class="song-of-the-week-3" draggable="true" id="song-of-the-week-3">
-                <h5>song 3</h5>
-                <p>artist 3</p>
+        <div class="right">
+            <div class="explanation-right">
+                <div class="explanation-right-1">
+                    <h4>Was ist der Top-Song der Woche?</h4>
+                    <p>Ziehe die Songs auf den richtigen Podestplatz und finde es raus!</p>
+                </div>
             </div>
         </div>
 
-        <div class="podest-sotw" id="drop-zone">
+        <div class="song-of-the-week-container">
+            <div class="song-of-the-week-1" draggable="true" id="song-of-the-week-1">
+                <div class="box-center">
+                    <h5>song 1</h5>
+                    <p>artist 1</p>
+                </div>
+            </div>
+            <div class="song-of-the-week-2" draggable="true" id="song-of-the-week-2">
+                <div class="box-center">
+                    <h5>song 2</h5>
+                    <p>artist 2</p>
+                </div>
+             </div>
+             <div class="song-of-the-week-3" draggable="true" id="song-of-the-week-3">
+                <div class="box-center">
+                    <h5>song 3</h5>
+                    <p>artist 3</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="podest-sotw" id="drop-zone-w">
             <div class="podest-sotw-base"></div>
             <div class="podest-sotw-2" id="sotw-drop-1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             <div class="podest-sotw-1" id="sotw-drop-0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -73,15 +87,6 @@
             <h2>3</h2>
         </div>
 
-        <div class="right">
-            <div class="explanation-right">
-                <div class="explanation-right-1">
-                    <h4>Was ist der Top-Song der Woche?</h4>
-                    <p>Bringe die Songs in die richtige Reihenfolge und finde es raus!</p>
-                </div>
-            </div>
-        </div>
-
     </section>
 
     <section id="song-of-the-month" class="song-of-the-month">
@@ -90,23 +95,38 @@
             <h2>Song of the month</h2>
         </div>
 
-        <div class="song-of-the-month-container">
-            <div class="song-of-the-month-1" draggable="true" id="song-of-the-month-1">
-                 <h5>song 1</h5>
-                 <p>artist 1</p>
-            </div>
-            <div class="song-of-the-month-2" draggable="true" id="song-of-the-month-2">
-                 <h5>song 2</h5>
-                <p>artist 2</p>
-             </div>
-             <div class="song-of-the-month-3" draggable="true" id="song-of-the-month-3">
-                <h5>song 3</h5>
-                <p>artist 3</p>
+        <div class="left">
+            <div class="explanation-left">
+                <div class="explanation-left-1">
+                    <h4>Was sind die Top-Songs des Monats?</h4>
+                    <p>Ziehe die Songs auf den richtigen Podestplatz und finde die meistgespielten Songs des Monats raus!</p>
+                </div>
             </div>
         </div>
 
-        <div class="podest-sotm">
-            <div class="podest-sotm-base" id="drop-zone"></div>
+        <div class="song-of-the-month-container">
+            <div class="song-of-the-month-1" draggable="true" id="song-of-the-month-1">
+                <div class="box-center">
+                    <h5>song 1</h5>
+                    <p>artist 1</p>
+                </div>
+            </div>
+            <div class="song-of-the-month-2" draggable="true" id="song-of-the-month-2">
+                <div class="box-center">
+                    <h5>song 2</h5>
+                    <p>artist 2</p>
+                </div>   
+             </div>
+             <div class="song-of-the-month-3" draggable="true" id="song-of-the-month-3">
+                <div class="box-center">
+                    <h5>song 3</h5>
+                    <p>artist 3</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="podest-sotm" id="drop-zone-m">
+            <div class="podest-sotm-base"></div>
             <div class="podest-sotm-2" id="sotm-drop-1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             <div class="podest-sotm-1" id="sotm-drop-0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             <div class="podest-sotm-3" id="sotm-drop-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -118,15 +138,6 @@
             <h2>3</h2>
         </div>
 
-        <div class="left">
-            <div class="explanation-left">
-                <div class="explanation-left-1">
-                    <h4>Was sind die Top-Songs des Monats?</h4>
-                    <p>Bringe die Songs in die richtige Reihenfolge und finde die meistgespielten Songs des Monats raus!</p>
-                </div>
-            </div>
-        </div>
-
     </section>
 
     <section id="song-of-the-year" class="song-of-the-year">
@@ -135,22 +146,37 @@
             <h2>Song of the year</h2>
         </div>
 
-        <div class="song-of-the-year-container" id="drop-zone">
-            <div class="song-of-the-year-1" draggable="true" id="song-of-the-year-1">
-                 <h5>song 1</h5>
-                 <p>artist 1</p>
-            </div>
-            <div class="song-of-the-year-2" draggable="true" id="song-of-the-year-2">
-                 <h5>song 2</h5>
-                <p>artist 2</p>
-             </div>
-             <div class="song-of-the-year-3" draggable="true" id="song-of-the-year-3">
-                <h5>song 3</h5>
-                <p>artist 3</p>
+        <div class="right">
+            <div class="explanation-right">
+                <div class="explanation-right-2">
+                    <h4>Was ist der Top-Song vom Jahr?</h4>
+                    <p>Welche Songs wurden in diesem Jahr bis jetzt am meisten gespielt? Ziehe die Songs auf den richtigen Podestplatz und finde es raus!</p>
+                </div>
             </div>
         </div>
 
-        <div class="podest-soty">
+        <div class="song-of-the-year-container" id="drop-zone">
+            <div class="song-of-the-year-1" draggable="true" id="song-of-the-year-1">
+                <div class="box-center">
+                    <h5>song 1</h5>
+                    <p>artist 1</p>
+                </div>
+            </div>
+            <div class="song-of-the-year-2" draggable="true" id="song-of-the-year-2">
+                <div class="box-center">
+                    <h5>song 2</h5>
+                    <p>artist 2</p>
+                </div>
+             </div>
+             <div class="song-of-the-year-3" draggable="true" id="song-of-the-year-3">
+                <div class="box-center">
+                    <h5>song 3</h5>
+                    <p>artist 3</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="podest-soty" id="drop-zone-y">
             <div class="podest-soty-base"></div>
             <div class="podest-soty-2" id="soty-drop-1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             <div class="podest-soty-1" id="soty-drop-0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -161,15 +187,6 @@
             <h2>2</h2>
             <h2>1</h2>
             <h2>3</h2>
-        </div>
-
-        <div class="right">
-            <div class="explanation-right">
-                <div class="explanation-right-2">
-                    <h4>Was ist der Top-Song vom Jahr?</h4>
-                    <p>Welche Songs wurden in diesem Jahr bis jetzt am meisten gespielt? Bringe die Songs in die richtige Reihenfolge und finde es raus!</p>
-                </div>
-            </div>
         </div>
 
     </section>
