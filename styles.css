@@ -77,24 +77,21 @@ p {
 
 /* DRAG & DROP */
 
-.song-of-the-week-1, .song-of-the-week-2, .song-of-the-week-3, .song-of-the-month-1, .song-of-the-month-2, .song-of-the-month-3, .song-of-the-year-1, .song-of-the-year-2, .song-of-the-year-3{   
+.song-of-the-week-1, .song-of-the-week-2, .song-of-the-week-3, 
+.song-of-the-month-1, .song-of-the-month-2, .song-of-the-month-3, 
+.song-of-the-year-1, .song-of-the-year-2, .song-of-the-year-3{   
+    border-radius: 5px;
     cursor: pointer;
     background-color: var(--off-white);
     opacity: 0.8;
+    /*padding: 2%;*/
 }
 
-/* .song-of-the-week-2 {   
-    cursor: pointer;
-    background-color: var(--off-white);
-    opacity: 0.8;
-}
-
-.song-of-the-week-3 {   
-    cursor: pointer;
-    background-color: var(--off-white);
-    opacity: 0.8;
-} */
-
+.song-of-the-week-1:hover, .song-of-the-week-2:hover, .song-of-the-week-3:hover,
+.song-of-the-month-1:hover, .song-of-the-month-2:hover, .song-of-the-month-3:hover, 
+.song-of-the-year-1:hover, .song-of-the-year-2:hover, .song-of-the-year-3:hover {
+    animation: wiggle 0.5s ease-in-out;
+  }
 
 /* GRID BODY */
 
@@ -156,6 +153,7 @@ main {
 }
 
 .categories-box-1 {
+    border-radius: 5px;
     width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
     height: 100%;
     background-color: var(--off-white);
@@ -167,6 +165,7 @@ main {
 }
 
 .categories-box-2 {
+    border-radius: 5px;
     width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
     height: 100%;
     background-color: var(--off-white);
@@ -178,6 +177,7 @@ main {
 }
 
 .categories-box-3 {
+    border-radius: 5px;
     width: 100%; /* 100% Breite, um die Spaltenbreite zu füllen */
     height: 100%;
     background-color: var(--off-white);
@@ -461,6 +461,21 @@ main {
     text-align: right; /* Setze den Text rechtsbündig aus */
 }
 
+@keyframes wiggle {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-5deg);
+    }
+    50% {
+      transform: rotate(5deg);
+    }
+    75% {
+      transform: rotate(-5deg);
+    }
+  }
+
 /* Media Query für Mobiltelefone (bis 576px) */
 @media (max-width: 1000px) {
     body {
@@ -511,7 +526,7 @@ main {
         text-align: center;
     }
 
-    .explanation-right-1, .explanation-right-2 {
+    .explanation-right-1, .explanation-right-2, .explanation-left-1 {
         text-align: center;
     }
 
@@ -540,9 +555,35 @@ main {
     .song-of-the-month-1, .song-of-the-month-2, .song-of-the-month-3, 
     .song-of-the-year-1, .song-of-the-year-2, .song-of-the-year-3 {
         text-align: center;
+        display: flex;
+            align-items: center;
+            justify-content: center;
         width: 30%;
         height: 100%;
     }
 
+    .podest-sotw, .podest-sotm, .podest-soty {
+        grid-column: 1 / span 3;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .podest-sotw-base,.podest-sotm-base, .podest-soty-base {
+        grid-column: 1 / span 3;
+    }
+
+    .podest-sotw-2, .podest-sotm-2, .podest-soty-2 {
+        grid-column: 1/ span 1;
+        height: 140px;
+    }
+
+    .podest-sotw-1, .podest-sotm-1, .podest-soty-1 {
+        grid-column: 2/ span 1;
+        height: 180px;
+    }
+
+    .podest-sotw-3, .podest-sotm-3, .podest-soty-3 {
+        grid-column: 3/ span 1;
+        height: 100px;
+    }
 
 }
