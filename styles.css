@@ -12,8 +12,6 @@ body {
     background-color: var(--off-black);
     color: var(--off-white);
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
     /* Hier wird das SVG als Hintergrundbild eingebunden */
     background-image: url('elements/ohrwurm-v3.svg');
     background-size: 110%; /* Das SVG wird an den Viewport angepasst */
@@ -22,13 +20,6 @@ body {
     background-position: 0px -200px; /* Beispiel für negative Werte */
 }
 
-/*h1 {
-    font-size: 5vw;
-    text-align: center;
-    font-weight: 600;  Semibold 
-    width: 7fr;
-}
-*/
 a {
     text-decoration: none;
 }
@@ -36,18 +27,8 @@ a {
 h2 {
     font-size: 64px;
     font-weight: 700; /* Bold */
-}
-
-.song-of-the-week h2, .song-of-the-month h2, .song-of-the-year h2{
     text-align: center; /* Center the text */
 }
-
-
-.numbers-sotw h2, .numbers-sotm h2, .numbers-soty h2{
-    margin: 0; /* Entfernen Sie den Standardmargenwert für die h2-Elemente */
-    text-align: center; /* Center the text */
-}
-
 
 h3 {
     font-size: 64px;
@@ -476,9 +457,92 @@ main {
     grid-column: 5 / span 2; /* Platzieren Sie die Einführungssektion in der zweiten Spalte, spannen */
 }
 
-.explanation-right-1 {
+.explanation-right-2 {
     text-align: right; /* Setze den Text rechtsbündig aus */
 }
 
+/* Media Query für Mobiltelefone (bis 576px) */
+@media (max-width: 1000px) {
+    body {
+        background-repeat: repeat-y; /* Das SVG wird nicht wiederholt */
+    }
+
+    h2 {
+        font-size: 2rem; /* Ändere die Schriftgröße für h2 auf Mobiltelefonen */
+    }
+
+    main {
+        grid-column: 1 / span 7; /* Ändere die Breite des Hauptbereichs für Mobiltelefone */
+    }
+
+    .categories{
+        display: flex;
+        grid-gap: 5%;
+        height: 100px;
+    }
+
+    .categories-box-1, .categories-box-2 , .categories-box-3  {
+        aspect-ratio: auto;
+        display: flex;
+            align-items: center;
+            justify-content: center;
+        padding: 5px;
+    }
+
+    h4 {
+        font-size: 16px;
+        font-weight: 500; /* Bold */
+        margin: auto;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .grid-container {
+        display: block;
+    }
+
+    .song-of-the-week-title, .song-of-the-month-title, .song-of-the-year-title {
+        margin-top: 15%;
+    }
+
+    .right {
+        text-align: center;
+    }
+
+    .explanation-right-1, .explanation-right-2 {
+        text-align: center;
+    }
+
+    .song-of-the-week-container, .song-of-the-month-container, .song-of-the-year-container{
+        display: flex;
+        grid-gap: 5%;
+        height: 120px;
+        padding: 5% 0%;
+    }
+
+    .song-of-the-week-container h5, .song-of-the-month-container h5, .song-of-the-year-container h5{
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .song-of-the-week-container p, .song-of-the-month-container p, .song-of-the-year-container p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .song-of-the-week, .song-of-the-month, .song-of-the-year {
+        display: block;
+    }
+
+    .song-of-the-week-1, .song-of-the-week-2, .song-of-the-week-3, 
+    .song-of-the-month-1, .song-of-the-month-2, .song-of-the-month-3, 
+    .song-of-the-year-1, .song-of-the-year-2, .song-of-the-year-3 {
+        text-align: center;
+        width: 30%;
+        height: 100%;
+    }
 
 
+}
